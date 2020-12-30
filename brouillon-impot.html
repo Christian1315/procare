@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D'eclaration d'impot</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="myProjets/webProjet/icofont/icofont.min.css">
+    <link rel="stylesheet" href="uikit-3.5.4/css/uikit.min.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="shortcut icon" href="images/favicon_procare.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="ravinance">
+        <div class="container-fluid background-header2" id="topbar">
+            <div class="row">
+                <div class="col-md-12 pl-0 pr-0 bg-nav text-white">
+                    <div class="pr-5 pl-5">
+                        <div class="pt-2 pb-2">
+                            <div class="row">
+                                <div class="col-md-12 navigator">
+                                    <span>
+                                        <a href="">
+                                            <span class="iconify text-white" data-icon="ant-design:facebook-filled" data-inline="false"></span>
+                                        </a>
+                                        <a href="">
+                                            <span class="iconify text-white" data-icon="ant-design:twitter-square-filled" data-inline="false"></span>
+                                        </a>
+                                        <a href="">
+                                            <span class="iconify text-white" data-icon="ant-design:linkedin-filled" data-inline="false"></span>
+                                        </a>
+                                        <a href="">
+                                            <span class="iconify text-white" data-icon="ant-design:google-plus-square-filled" data-inline="false"></span>
+                                        </a>
+                                    </span>
+                                    <span style="float: right;">
+    
+                                        <span class="iconify phone" data-icon="clarity:phone-handset-solid" data-inline="false"></span>
+                                       <a href="" style="text-decoration: none;">
+                                            <span class="phone1">
+                                                +1 (514) 262-9508
+                                            </span>
+                                       </a>
+                                        <span class="iconify mail" data-icon="heroicons-solid:mail" data-inline="false"></span>
+                                        <a href="" style="text-decoration: none;">
+                                            <span style="color:white;">
+                                                procare@contact.com
+                                            </span>
+                                        </a>
+                                        <!-- <div class="bordure3">
+                                            
+                                        </div>
+    
+                                        <a href="">
+                                            <img src="images/francais.png" alt="langue_francaise">
+                                        </a> -->
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <nav class="navbar navbar-expand-lg navbar-light text-white">
+                            <a class="navbar-brand" href="#">
+                                <img src="images/logo_procare.png" alt="" width="50%" title="PROCARE">
+                            </a>
+                            <button class="uk-button   uk-margin-small-right bg-transparent navbar-toggler float-right"  uk-toggle="target: #offcanvas-slide">
+                                <span class="iconify iconify"   data-icon="eva:menu-outline" data-inline="false" data-width="30" style="  color: #FFF;opacity: 1;"></span>
+                            </button>
+                            <div class="collapse navbar-collapse  " id="navbarText">
+                              <ul class="navbar-nav mr-auto uk-navbar-center">
+                                    <li class="nav-item active mr-1  pl-3 pr-3 accueil">
+                                    <a class="nav-link text-white" href="index.html">Accueil <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="nav-item active mr-1  pl-3 pr-3 liste-nav">
+                                    <a class="nav-link text-white" href="declaration_impot.html">Accompagnement</a>
+                                    </li>
+                                    <li class="nav-item active mr-1 pl-3 pr-3 liste-nav">
+                                    <a class="nav-link text-white" href="equipe.html">L'equipe</a>
+                                    </li>
+                                    <li class="nav-item active mr-1 pl-3 pr-3 liste-nav">
+                                        <a class="nav-link text-white" href="carriere.html">Carrière</a>
+                                    </li>
+                                    <li class="nav-item active mr-1 pl-3 pr-3 liste-nav">
+                                        <a class="nav-link text-white" href="actualite.html">Actualités</a>
+                                    </li>
+                                    <li class="nav-item active mr-1 pl-3 pr-3 liste-nav">
+                                        <a class="nav-link text-white" href="contact.html">Contact</a>
+                                    </li>
+                                   
+                              </ul>
+                              <!-- <span class="navbar-text text-white">
+    
+                                    <span class="recherche">
+                                        <input type="search" class="" placeholder="search">
+                                        <span class="iconify" data-icon="eva:search-fill" data-inline="false"></span>
+                                    </span>                            
+                              </span> -->
+                              <div class="uk-margin recherche">
+                                <form class="uk-search uk-search-default">
+                                    <a href="" class="uk-search-icon-flip" uk-search-icon></a>
+                                    <input class="uk-search-input recherche1" type="search" placeholder="Search...">
+                                </form>
+                              </div>
+                            </div>
+                            <div id="offcanvas-slide" uk-offcanvas="overlay: true" >
+                                <div class="uk-offcanvas-bar bg-dark  d-lg-none d-xl-none" uk-height-match="target: .menu-sidbar">
+                                    <span class="uk-offcanvas-close" type="button" uk-close></span>
+                                    <ul class="navbar-nav  mt-5 ml-2 menu-sidbar" >
+                                      <li class=" active mb-4" uk-scrollspy="cls: uk-animation-slide-top; delay: 400; repeat: true">
+                                        <a class=" texte-white"  href="#cabinet" uk-scroll> Accueil <span class="sr-only">(current)</span></a>
+                                      </li>
+                                      <li class="mb-4" uk-scrollspy="cls: uk-animation-slide-top; delay: 500; repeat: true">
+                                        <a class="texte-white" href="#domaine" uk-scroll>Accompagnement </a>
+                                      </li>
+                                      <li class=" mb-4" uk-scrollspy="cls: uk-animation-slide-top; delay: 600; repeat: true">
+                                        <a class="texte-white" href="#equipe" uk-scroll>L'équipe</a>
+                                      </li>
+                                      <li class=" mb-4 " uk-scrollspy="cls: uk-animation-slide-top; delay: 700; repeat: true">
+                                        <a class="texte-white" href="#">  Carrière</a>
+                                      </li>
+                                      <li class=" mb-4 " uk-scrollspy="cls: uk-animation-slide-top; delay: 800; repeat: true">
+                                        <a class="texte-white" href="#">Actualités</a>
+                                      </li>
+                                      <li class=" mb-4 " uk-scrollspy="cls: uk-animation-slide-top; delay: 900; repeat: true">
+                                        <a class="texte-white" href="#">Contact</a>
+                                      </li>
+                                      <li class=" mb-4 " uk-scrollspy="cls: uk-animation-slide-top; delay: 1000; repeat: true">
+                                        <span class="iconify phone" data-icon="clarity:phone-handset-solid" data-inline="false"></span>
+                                        <a href="" style="text-decoration: none;">
+                                             <span class="phone1">
+                                                 +1 (514) 262-9508
+                                             </span>
+                                        </a>
+                                    </li>
+                                    <li class=" mb-4 " uk-scrollspy="cls: uk-animation-slide-top; delay: 1100; repeat: true">
+                                         <span class="iconify mail" data-icon="heroicons-solid:mail" data-inline="false"></span>
+                                        <a href="" style="text-decoration: none;">
+                                            <span style="color:white;">
+                                                procare@contact.com
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class=" mb-4 " uk-scrollspy="cls: uk-animation-slide-top; delay: 1200; repeat: true">
+                                        <span>
+                                            <a href="">
+                                                <span class="iconify text-white" data-icon="ant-design:facebook-filled" data-inline="false"></span>
+                                            </a>
+                                            <a href="">
+                                                <span class="iconify text-white" data-icon="ant-design:twitter-square-filled" data-inline="false"></span>
+                                            </a>
+                                            <a href="">
+                                                <span class="iconify text-white" data-icon="ant-design:linkedin-filled" data-inline="false"></span>
+                                            </a>
+                                            <a href="">
+                                                <span class="iconify text-white" data-icon="ant-design:google-plus-square-filled" data-inline="false"></span>
+                                            </a>
+                                        </span>
+                                    </li>
+                                  </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                    <div class="text-header">
+                        <h1>
+                            déclaration d'impot
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </header>
+    <main class="container-fluid pr-0 pl-0 ">
+         <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 mt-5">
+                  <h2 class="titre-finance">Découvrez notre service en finance</h2>
+                  <div class="border-finance">
+
+                  </div>
+                  <p class="paragraphe-finance">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor hyrrt invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusamr et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamtr yut ui cnonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diamdrvvvvvy yrvoluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.
+                  </p>
+                </div>
+            </div>
+         </div>
+         <div class="container-fluid pl-0 pr-0 ">
+            <section class="section-three  mt-5 pb-5" style="background: #E4FEFE;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 text-center mt-3">
+                                <h3>Déclaration d'impot</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <p class="paragraphe-finance1">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor hyrrt invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusamr et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea sed diamtr yut ui cnonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diamdrvvvvvy yrvoluptua.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="impot">
+                                    <p class="paragraphe-impot">
+                                        impot des particuliers
+                                    </p>
+                                </div>
+                                <div class="trait"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 mt-3">
+                                <div class="card card-header bg-white ">
+                                    <div class="card-body">
+                                        <div class="border-etudiant"></div>
+                                    <h2 class="card-title titre-finance2 ">Etudiants</h2>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe alias sint odit aliquam rerum dolor molestiae</p>
+
+                                    </div>
+                                </div>
+            
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 mt-3">
+                                <div class="card card-header bg-white ">
+                                    <div class="card-body">
+                                        <div class="border-etudiant"></div>
+                                    <h2 class="card-title titre-finance2 ">Personnes retraitées</h2>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi qui corporis, magnam aperiam impedit harum </p>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 mt-4">
+                                <div class="impot-two">
+                                    <p class="paragraphe-impot-two">
+                                        impot des entreprises (travailleurs autonomes)
+                                    </p>
+                                </div>
+                                <div class="trait-two"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-lg-5 col-12 mt-5">
+
+                                <div class="card card-header bg-white ">
+                                    <div class="card-body">
+                                        
+                                    
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi qui corporis, magnam aperiam impedit harum molestias ipsam minima maiores quidem autem at mollitia laboriosam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eveniet numquam eius mollitia repudiandae dolorum explicabo veniam eum, nulla unde atque reiciendis debitis
+                                    </p>
+
+                                    <!-- <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi qui corporis, magnam aperiam impedit harum molestias ipsam minima maiores quidem autem at mollitia laboriosam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eveniet numquam eius mollitia repudiandae dolorum explicabo veniam eum, nulla unde atque reiciendis debitis
+                                    </p> -->
+                                    
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <a href="" class="rendez-vous mt-4" style="text-decoration: none;">
+                                    Prendre rendez-vous
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+           </section>
+          
+         </div>
+        </main>
+        <footer>
+    
+            <div class="container-fluid  footer">
+                <div class="row pt-5 pb-5">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-4 ">
+                        <div class="uk-child-width-expand@s" uk-grid>
+                           <div>
+                                <img src="images/logo_procare1.png" alt="" width="80%">
+                           </div>
+        
+                           <div>
+                                <div class="pb-3">
+                                    <span class="iconify text-white" data-icon="gridicons:location" data-inline="false"></span>
+                                    <span class="text-white">15 Rue Saint-Paul, Québec H3B 4L2</span>
+                                </div>
+        
+                                <div class="pb-3">
+                                    <span class="iconify text-white" data-icon="foundation:telephone" data-inline="false"></span>
+                                    <span class="text-white">+1 514 394-6751</span>
+                                </div>
+                                <div class="">
+                                    <span class="iconify text-white " data-icon="dashicons:email-alt" data-inline="false"></span>
+                                    <span class="text-white mail-procare">Procare@contact.com</span>
+                                </div>
+                           </div>
+                            
+                        </div>
+                        
+                    </div>
+        
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-4 text-center ">
+                        <h5 class="text-white">Suivez-nous :</h5>
+        
+                        <span>
+                            <a href=""><span class="iconify reseaux text-white" data-icon="ri:facebook-box-fill" data-inline="false"></span></a>
+                            <a href=""><span class="iconify reseaux text-white" data-icon="ant-design:twitter-square-filled" data-inline="false"></span></a>
+                            <a href=""><span class="iconify reseaux text-white" data-icon="ant-design:linkedin-filled" data-inline="false"></span></a>
+                            <a href=""><span class="iconify reseaux text-white" data-icon="ant-design:google-plus-square-filled" data-inline="false"></span></a>
+                        </span>
+        
+                        <div class="pt-5">
+                            
+                           <div class="pb-3">
+                                <span class="text-white">S'abonner à notre newsletters</span>
+                           </div>
+        
+                           <form action="" method="">
+                            <div class="input-group mb-3">
+                                <input type="email" name="email" class="form-control procare-mail" data-msg="Entrez une adresse Email valide" placeholder="procare@gmail.com" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                  <button type="submit" name="submit" class="input-group-text recherche-mail" id="basic-addon2"><i class="fas fa-paper-plane" style="font: size 24px; color:white ;"></i></button>
+                                </div>
+                            </div>
+                         </form>
+                        </div>
+                    </div>
+        
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-4 ">
+        
+                        <div class="uk-child-width-expand@s"  uk-grid>
+                            <div>
+                               
+                                <ul class="uk-list uk-list-disc">
+                                    <li class="text-white">Accueil</li>
+                                    <li class="text-white">L'Equipe</li>
+                                    <li class="text-white">Actualités</li>
+                                </ul>
+                            </div>
+                        
+                            <div>
+                               
+                                <ul class="uk-list uk-list-disc">
+                                    <li class="text-white">Accompagnement</li>
+                                    <li class="text-white">Carrière</li>
+                                    <li class="text-white">Contact</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="container-fluid copyright">
+                <div class="row  text-center">
+                    <div class="col-md-12 col-12 col-sm-12 col-lg-12 pl-0 pr-0 pt-3 pb-3">
+                        <span class=" pt-2 pb-2 span-footer copy text-white">
+                             &copy; copyright PROCARE. All Rights Reserved
+                             Développé par <a href="#" class="copy">B.L TECHNOLOGY</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+      </div>
+      <script src="bootstrap/js/jquery-3.5.1.js"></script>
+      <script src="bootstrap/js/popper.min.js"></script>
+      <script src="bootstrap/js/style.js"></script>
+      <script src = "https://code.iconify.design/1/1.0.7/iconify.min.js"> </script>
+      <script src="uikit-3.5.4/js/uikit.min.js"></script>
+      <script src="uikit-3.5.4/js/uikit-icons.min.js"></script>
+</body>
+</html>

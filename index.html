@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="myProjets/webProjet/icofont/icofont.min.css">
+    <link rel="stylesheet" href="uikit-3.5.4/css/uikit.min.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="shortcut icon" href="images/favicon_procare.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container-fluid" id="header">
+        <div class="row  nav-div1 fixed-top ">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 pt-2 pb-1 navigator">
+                <span>
+                    <a href=""><span class="iconify reseaux text-white" data-icon="ri:facebook-box-fill" data-inline="false"></span></a>
+                    <a href=""><span class="iconify reseaux text-white" data-icon="ant-design:twitter-square-filled" data-inline="false"></span></a>
+                    <a href=""><span class="iconify reseaux text-white" data-icon="ant-design:linkedin-filled" data-inline="false"></span></a>
+                    <a href=""><span class="iconify reseaux text-white" data-icon="ant-design:google-plus-square-filled" data-inline="false"></span></a>
+                </span>
+
+                <span class="float-right">
+                    <span class=" mr-3">
+                        <span class="iconify icon-right" data-icon="foundation:telephone" data-inline="false"></span>
+                        <a href="tel:+15143946751" class="text-white" style="text-decoration: none;">+1 514 394-6751</a>
+                    </span>
+                    <span>
+                        <span class="iconify icon-right" data-icon="entypo:mail" data-inline="false"></span>
+                        <a href="mailto:procare@contact.com" class="text-white" style="text-decoration: none;">procare@contact.com</a>
+                    </span>
+                </span>
+                <hr>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 nav-head">
+                <nav class="navbar navbar-expand-lg navbar-light text-white">
+
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/logo_procare.png" alt="" width="40%" title="PROCARE CONSULTING">
+                    </a>
+
+                    <button class="uk-button   uk-margin-small-right bg-transparent navbar-toggler float-right"  uk-toggle="target: #offcanvas-slide">
+                        <span class="iconify iconify menu"   data-icon="eva:menu-outline" data-inline="false" data-width="30" style="  color: #FFF;opacity: 1;"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse " id="navbarText">
+                      <ul class="navbar-nav mr-auto uk-navbar-left">
+
+                            <li class="nav-item active mr-1 bg-primary pl-3 pr-3 accueil">
+                                <a class="nav-link text-white" href="index.html">Accueil <span class="sr-only">(current)</span></a>
+                            </li>
+                            <!-- <li class="nav-item active mr-1  pl-3 pr-3 liste-nav">
+                                <a class="nav-link text-white" href="declaration_impot.html">Accompagnement</a>
+                            </li> -->
+                            <!-- <div class="dropdown">
+                                <a class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Accompagnement
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="">Ressource humaines</a>
+                                  <a class="dropdown-item" href="declaration_impot.html">D'éclaration d'impot</a>
+                                  
+                                </div>
+                              </div> -->
+                              <a class="ml-3  liste-nav1" type="button">Accompagnement</a>
+                                <div uk-dropdown>
+                                    <ul class="uk-nav uk-dropdown-nav">
+                                        <li class="uk-active"><a href="declaration_impot.html">Déclaration d'impot</a></li>
+                                        <li class="uk-active"><a href="ressources_humaines.html">Resssources Humaines</a></li>
+                                        
+                                    </ul>
+                                </div>
+                            <li class="nav-item active mr-1 ml-3 pl-3 pr-3 liste-nav">
+                                <a class="nav-link text-white" href="equipe.html">L'equipe</a>
+                            </li>
+                            <li class="nav-item active mr-1 pl-3 pr-3 liste-nav">
+                                <a class="nav-link text-white" href="carriere.html">Carrière</a>
+                            </li>
+                            <li class="nav-item active mr-1 pl-3 pr-3 liste-nav">
+                                <a class="nav-link text-white" href="actualite.html">Actualités</a>
+                            </li>
+                            <li class="nav-item active mr-1 pl-3 pr-3 liste-nav">
+                                <a class="nav-link text-white font-weight-bold" href="contact.html">Contact</a>
+                            </li>
+                            
+                        </ul>
+                        <!-- <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form> -->
+                        
+
+                        <!-- <span class="navbar-text text-white">
+                            <span class="recherche ">
+                                <input type="search" class="search font-weight-bold" name="" placeholder="Search...">
+                                <a href="" class=" icon-search">
+                                    <span class="iconify text-white" data-icon="fa-solid:search" data-inline="false"></span>
+                                </a>
+                            </span>
+                        </span> -->
+
+                    </div>
+
+                    <div id="offcanvas-slide" uk-offcanvas="overlay: true" >
+                        <div class="uk-offcanvas-bar bg-dark  d-lg-none d-xl-none" uk-height-match="target: .menu-sidbar">
+                            <span class="uk-offcanvas-close" type="button" uk-close></span>
+                            <ul class="navbar-nav  mt-5 ml-2 menu-sidbar" >
+                              <li class=" active mb-4" uk-scrollspy="cls: uk-animation-slide-top; delay: 400; repeat: true">
+                                <a class=" texte-white"  href="#cabinet" uk-scroll> Accueil <span class="sr-only">(current)</span></a>
+                              </li>
+                              <li class="mb-4" uk-scrollspy="cls: uk-animation-slide-top; delay: 500; repeat: true">
+                                <a class="texte-white" href="#domaine" uk-scroll>Accompagnement </a>
+                              </li>
+                              <li class=" mb-4" uk-scrollspy="cls: uk-animation-slide-top; delay: 600; repeat: true">
+                                <a class="texte-white" href="#equipe" uk-scroll>L'équipe</a>
+                              </li>
+                              <li class=" mb-4 " uk-scrollspy="cls: uk-animation-slide-top; delay: 700; repeat: true">
+                                <a class="texte-white" href="#">  Carrière</a>
+                              </li>
+                              <li class=" mb-4 " uk-scrollspy="cls: uk-animation-slide-top; delay: 800; repeat: true">
+                                <a class="texte-white" href="#">Actualités</a>
+                              </li>
+                              <li class=" mb-4 " uk-scrollspy="cls: uk-animation-slide-top; delay: 900; repeat: true">
+                                <a class="texte-white" href="#">Contact</a>
+                              </li>
+                              <li class=" mb-4 " uk-scrollspy="cls: uk-animation-slide-top; delay: 1000; repeat: true">
+                                <span class="iconify phone" data-icon="clarity:phone-handset-solid" data-inline="false"></span>
+                                <a href="" style="text-decoration: none;">
+                                     <span class="phone1">
+                                         +1 (514) 262-9508
+                                     </span>
+                                </a>
+                              </li>
+                              <li class=" mb-4 " uk-scrollspy="cls: uk-animation-slide-top; delay: 1100; repeat: true">
+                                    <span class="iconify mail" data-icon="heroicons-solid:mail" data-inline="false"></span>
+                                    <a href="" style="text-decoration: none;">
+                                        <span style="color:white;">
+                                            procare@contact.com
+                                        </span>
+                                    </a>
+                              </li>
+                              <li class=" mb-4 " uk-scrollspy="cls: uk-animation-slide-top; delay: 1200; repeat: true">
+                                <span>
+                                    <a href="">
+                                        <span class="iconify text-white" data-icon="ant-design:facebook-filled" data-inline="false"></span>
+                                    </a>
+                                    <a href="">
+                                        <span class="iconify text-white" data-icon="ant-design:twitter-square-filled" data-inline="false"></span>
+                                    </a>
+                                    <a href="">
+                                        <span class="iconify text-white" data-icon="ant-design:linkedin-filled" data-inline="false"></span>
+                                    </a>
+                                    <a href="">
+                                        <span class="iconify text-white" data-icon="ant-design:google-plus-square-filled" data-inline="false"></span>
+                                    </a>
+                                </span>
+                            </li>
+                          </ul>
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 pl-0 pr-0">
+    
+           
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="ratio: 7:3; animation: push; autoplay: true; pause-on-hover: true">
+
+                <ul class="uk-slideshow-items">
+                    <li>
+                        <img src="images/procare_assistante.png" alt="" uk-cover class="img-header">
+                        <div class="uk-overlay-default background-header uk-position-cover"></div>
+                        <div class="uk-overlay  uk-position-center-left mt-6 uk-position-small pt-5 pb-5 pl-5 pr-5 ml-5 dispara">
+                            <h1 class="uk-margin-remove text-white pb-2 font-weight-bold">
+                                L'AGENCE CONSEIL POUR <br> VOTRE DEVELOPPEMENT
+                            </h1>
+                            <p class="uk-margin-remove text-white pr-5 pb-2 paragraphe-header">
+                                Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <P>
+                                <a class="btn  btn-primary rounded-0" href="contact.html" role="button">Contactez-nous</a>
+                            </P>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/procare2.jpg" alt="" uk-cover class="img-header">
+
+                        <div class="uk-overlay-default background-header uk-position-cover"></div>
+
+                        <div class="uk-overlay  uk-position-center-left mt-6 uk-position-small pt-5 pb-5 pl-5 pr-5 ml-5 dispara ">
+                            <h1 class="uk-margin-remove text-white pb-2 font-weight-bold">
+                                L'AGENCE CONSEIL POUR <br> VOTRE DEVELOPPEMENT
+                            </h1>
+                            <p class="uk-margin-remove text-white pr-5 pb-2 paragraphe-header">
+                                Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <P>
+                                <a class="btn  btn-primary rounded-0" href="#" role="button">Contactez-nous</a>
+                            </P>
+                        </div>
+
+                    </li>
+                    <li>
+                        <img src="images/procare2.jpg" alt="" uk-cover class="img-header">
+
+                        <div class="uk-overlay-default background-header uk-position-cover"></div>
+
+                        <div class="uk-overlay  uk-position-center-left mt-6 uk-position-small pt-5 pb-5 pl-5 pr-5 ml-5 dispara">
+                            <h1 class="uk-margin-remove text-white pb-2 font-weight-bold">
+                                L'AGENCE CONSEIL POUR <br> VOTRE DEVELOPPEMENT
+                            </h1>
+                            <p class="uk-margin-remove text-white pr-5 pb-2 paragraphe-header">
+                                Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <P>
+                                <a class="btn  btn-primary rounded-0" href="#" role="button">Contactez-nous</a>
+                            </P>
+                        </div>
+
+                    </li>
+                </ul>
+            
+                <div class="uk-position-bottom-center dotnav uk-position-small">
+                    <ul class="uk-dotnav">
+                        <li uk-slideshow-item="0"><a href="#">Item 1</a></li>
+                        <li uk-slideshow-item="1"><a href="#">Item 2</a></li>
+                        <li uk-slideshow-item="2"><a href="#">Item 3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid ">
+    <div class="row pr-5 pl-5 pb-3  bg-white first-section">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 d-flex justify-content-center pt-5 first-section-one pr-0">
+            <img src="images/Vision_procare.png" alt="" width="70%" class="transition">
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 pt-5 first-section-one pl-0">
+            <h2 class="text-center font-weight-bold titre">NOTRE VISION</h2>
+            <div class="vava_identity"></div>
+
+            <p class="paragraphe-vision">
+                Notre approche est centrée sur la transmission de la connaissance et du savoir. Il est toujours bien de transmettre ce qui te rend heureux aux autres pour qu'ils en profitent.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row pt-1 pb-1 second-section">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 second-section-one"></div>
+    </div>
+</div>
+
+<div class="container-fluid  ">
+    <div class="row pr-5 pl-5 pt-5 pb-5 background-mission skew ">
+        <div class="col-12 col-sm-12 col-md-12 pb-5 col-lg-6 skew-1  pr-0">
+            <h2 class="text-center font-weight-bold titre1">NOTRE MISSION</h2>
+            <div class="vava_identity_mission"></div>
+            <p class="paragraphe-vision">
+                Pro-Care Consultation est un cabinet de consultation en Ressources humaines qui facilitera l’insertion et intégration des nouveaux arrivants au niveau scolaire et professionnel.
+            </p>
+           
+        </div>
+        <div class="col-12 col-sm-12  pb-5 col-md-12 col-lg-6 skew-1  pl-0 d-flex justify-content-center">
+            <img src="images/mission.png" alt="" width="70%" class="transition">
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid bg-white nos-valeurs first-section pb-2">
+    <div class="container first-section-one">
+        <div class="row ">
+            <div class="col-12 col-sm-12 pt-5 col-md-12 col-lg-12 text-center">
+                <h2 class="text-center font-weight-bold titre2"><span class="">NOS VALEURS</span></h2>
+                <div class="vava"></div>
+            </div>
+            
+        </div>
+        <div class="row mt-3">
+
+            <div class="col-md-4 col-sm-4 col-4 col-lg-4 text-center">
+                <span><img src="images/confiance.png" alt=""></span> <br>
+                <span class="title-valeur">La confiance</span>
+                <p class="paragraphe-valeur">
+                    Avoir confiance aux personnes qui nous entourent apporte des réponses concrètes à nos questions afin d'assurer la croissance de l'entreprise.
+                </p>
+            </div>
+
+            <div class="col-md-4 col-sm-4 col-4 col-lg-4 text-center">
+                <img src="images/partage.png" alt=""> <br>
+                <span class="title-valeur">Le partage</span>
+                <p class="paragraphe-valeur">
+                    Partager, c'est l'occasion pour les autres d'apprendre plus de nous. Il s'agit également de leur communiquer et de transmettre notre savoir.
+                </p>
+            </div>
+
+            <div class="col-md-4 col-sm-4 col-4 col-lg-4 text-center">
+               <span><img src="images/respect.png" alt=""></span> <br>
+               <span class="title-valeur">Le respect</span>
+               <p class="paragraphe-valeur">
+                Respecter, c'est considérer quelqu'un peu importe ses valeurs, ses convictions ou ses qualités.
+               </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid second-section nos-chiffres pb-5">
+    <div class="container  second-section-one">
+        <div class="row pt-5">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                <h2 class="text-center font-weight-bold titre3"><span class="">NOS CHIFFRES CLEFS</span></h2>
+                <div class="vava"></div>
+
+            </div>
+        </div>
+
+
+        <div class="row mt-3">
+
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 text-center ">
+                <img src="images/icone1.png" alt="" class="rounded-circle"> 
+                <div><span>+150</span></div>
+                <div>
+                    <span>
+                        REDIGES ET OPTIMISES
+                    </span>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 text-center">
+                <img src="images/icone1.png" alt="" class="rounded-circle">
+                <div><span>+150</span></div>
+
+                <div>
+                    <span>
+                        REDIGES ET OPTIMISES
+                    </span>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 text-center">
+                <img src="images/icone1.png" alt="" class="rounded-circle">
+                <div><span>+150</span></div>
+
+                <div>
+                    <span>
+                        REDIGES ET OPTIMISES
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="row pt-5">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                <h2 class="text-center font-weight-bold titre4"><span class="">TEMOIGNAGES</span></h2>
+                <div class="vava"></div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row second-section-one chiffre-1">
+        <div class="col-md-12 pb-2">
+            <div class="uk-position-relative uk-visible-toggle uk-light temoignage" tabindex="-1" uk-slider="autoplay: true, autoplay-interval: 500, pause-on-hover: true">
+
+                <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-2@m uk-grid" >
+                   
+                    <li>
+                        <div class="uk-panel">
+                            <img src="images/james-procare.png" alt="" width="15%" class="card-image transition">
+                            <div class="card  card-p">
+                                <div class="card-body">
+                                    <h5 class="card-title float-right">
+                                        <span class="iconify quote-right" data-icon="fa-solid:quote-right" data-inline="false"></span>
+                                    </h5> <br>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.
+                                    </p>
+                                  <h5 class="text-dark card-name">Angela Merkel</h5>
+                                </div>
+                              </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-panel">
+                            <img src="images/Angela.png" alt="" width="15%" class="card-image transition">
+                            <div class="card  card-p">
+                                <div class="card-body">
+                                  <h5 class="card-title float-right">
+                                    <span class="iconify quote-right" data-icon="fa-solid:quote-right" data-inline="false"></span>
+                                  </h5> <br>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.
+                                    </p>
+                                    <h5 class="text-dark card-name">James Cameron</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-panel">
+                            <img src="images/james-procare.png" alt="" class="card-image transition" width="15%">
+                            <div class="card  card-p">
+                                <div class="card-body">
+                                    <h5 class="card-title float-right">
+                                        <span class="iconify quote-right" data-icon="fa-solid:quote-right" data-inline="false"></span>
+                                    </h5> <br>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.
+                                    </p>
+                                    <h5 class="text-dark card-name">Angela Merkel</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-panel">
+                            <img src="images/Angela-procare.png" alt="" class="card-image transition" width="15%">
+                            <div class="card card-p">
+                                <div class="card-body">
+                                    <h5 class="card-title float-right">
+                                        <span class="iconify quote-right" data-icon="fa-solid:quote-right" data-inline="false"></span>
+                                    </h5> <br>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.
+                                    </p>
+                                    <h5 class="text-dark card-name">James Cameron</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+            
+                <a class="uk-position-center-left uk-position-small  direction" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small  direction" href="#" uk-slidenav-next uk-slider-item="next"></a>
+            
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid bg-dark">
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 mt-5">
+            <p class="para_event text-white">
+                Je veux être informé des offres, actualité <br> et événements de Procare Consulting
+            </p>
+
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 mt-5 ">
+            <form action="" method="" class="arrondi" >
+                <div class="input-group mb-3">
+                    <input type="email" name="email" class="form-control procare-mail1  text-center" data-msg="Entrez une adresse Email valide" placeholder="Saisissez votre email pour vous abonner" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button type="submit" name="submit" class="input-group-text recherche-mail1" id="basic-addon2">S'inscrire</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+    <div class="container-fluid  footer">
+        <div class="row pt-5 pb-5">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 ">
+                <div class="uk-child-width-expand@s" uk-grid>
+                   <div>
+                        <img src="images/logo_procare1.png" class="logo_footer" alt="" width="80%">
+                   </div>
+
+                   <div>
+                        <div class="pb-3">
+                            <span class="iconify text-white" data-icon="gridicons:location" data-inline="false"></span>
+                            <span class="text-white">15 Rue Saint-Paul, Québec H3B 4L2</span>
+                        </div>
+
+                        <div class="pb-3">
+                            <span class="iconify text-white" data-icon="foundation:telephone" data-inline="false"></span>
+                            <span class="text-white">+1 514 394-6751</span>
+                        </div>
+                        <div class="">
+                            <span class="iconify text-white " data-icon="dashicons:email-alt" data-inline="false"></span>
+                            <span class="text-white mail-procare">Procare@contact.com</span>
+                        </div>
+                   </div>
+                    
+                </div>
+                
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 text-center ">
+                <h5 class="text-white">Suivez-nous :</h5>
+
+                <span>
+                    <a href=""><span class="iconify reseaux text-white" data-icon="ri:facebook-box-fill" data-inline="false"></span></a>
+                    <a href=""><span class="iconify reseaux text-white" data-icon="ant-design:twitter-square-filled" data-inline="false"></span></a>
+                    <a href=""><span class="iconify reseaux text-white" data-icon="ant-design:linkedin-filled" data-inline="false"></span></a>
+                    <a href=""><span class="iconify reseaux text-white" data-icon="ant-design:google-plus-square-filled" data-inline="false"></span></a>
+                </span>
+
+                <div class="pt-5">
+                    
+                   <div class="pb-3">
+                        <span class="text-white">S'abonner à notre newsletters</span>
+                   </div>
+
+                   <form action="" method="">
+                    <div class="input-group mb-3">
+                        <input type="email" name="email" class="form-control procare-mail" data-msg="Entrez une adresse Email valide" placeholder="procare@gmail.com" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                          <button type="submit" name="submit" class="input-group-text recherche-mail" id="basic-addon2"><i class="fas fa-paper-plane" style="font: size 24px; color:white ;"></i></button>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 ">
+
+                <div class="uk-child-width-expand@s"  uk-grid>
+                    <div>
+                       
+                        <ul class="uk-list uk-list-disc">
+                            <a href="index.html" style="text-decoration: none;">
+                                <li class="text-white">Accueil</li>
+                            </a>
+                            <a href="equipe.html" style="text-decoration: none;">
+                                <li class="text-white">L'Equipe</li>
+                            </a>
+                            <a href="actualite.html"  style="text-decoration: none;">
+                                <li class="text-white">Actualités</li>
+                            </a>
+                        </ul>
+                    </div>
+                
+                    <div>
+                       
+                        <ul class="uk-list uk-list-disc">
+                            <a href="actualite.html" style="text-decoration: none;">
+                                <li class="text-white">Accompagnement</li>
+                            </a>
+                            <a href="carriere.html" style="text-decoration: none;">
+                                <li class="text-white">Carrière</li>
+                            </a>
+                            <a href="contact.html" style="text-decoration: none;">
+                                <li class="text-white">Contact</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--        
+         <a id="back2Top" title="Back to top" href="#">&#10148;</a> -->
+
+    <div class="container-fluid copyright">
+        <div class="row  text-center">
+            <div class="col-md-12 col-12 col-sm-12 col-lg-12 pl-0 pr-0 pt-3 pb-3">
+                <span class=" pt-2 pb-2 span-footer copy text-white">
+                     &copy; copyright PROCARE. All Rights Reserved
+                     Développé par <a href="#" class="copy">B.L TECHNOLOGY</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</footer>
+    <!-- <div class="container-fluid pl-0 pr-0 ">
+      <section class="section pb-5">
+        <div class="bordure-temoignage">
+
+        </div>
+        <div class="bordure-section1">
+
+        </div>
+        <div class="container">
+            <div class="row section-vision">
+                <div class="col-lg-6 col-md-6 col-sm-12 image-vision">
+                    <img src="images/Vision_procare.png" alt="" class="transition">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 veek">
+                    <h1 class="title-vision">notre vision</h1>
+                    <p class="para-vision">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ipsam numquam debitis labore adipisci harum, voluptatum error. Repellendus mollitia asperiores, non iusto illo nihil, numquam quidem pariatur a ex ratione.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus blanditiis odio labore perferendis natus rem expedita totam saepe. Architecto ex magni non sed voluptas minus quidem corrupti aliquam id inventore.
+                    </p>
+                    <p class="para-vision1">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure expedita accusamus laudantium magni beatae iusto, corrupti maxime. Ad, maiores! Iusto ullam dolorem maiores velit illum! Tempore dolorum saepe voluptatibus voluptatum!
+                    </p>
+                </div>
+            </div>
+        </div>
+      </section>
+    </div>
+    <div class="container-fluid pl-0 pr-0 ">
+        <section class="degres pb-5">
+            <div class="bordure-section">
+
+            </div>
+            <div class="container">
+                <div class="row degras">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <h1 class="title-mission">notre mission</h1>
+                        <p class="para-vision">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ipsam numquam debitis labore adipisci harum, voluptatum error. Repellendus mollitia asperiores, non iusto illo nihil, numquam quidem pariatur a ex ratione.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus blanditiis odio labore perferendis natus rem expedita totam saepe. Architecto ex magni non sed voluptas minus quidem corrupti aliquam id inventore.
+                        </p>
+                        <p class="para-vision1">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure expedita accusamus laudantium magni beatae iusto, corrupti maxime. Ad, maiores! Iusto ullam dolorem maiores velit illum! Tempore dolorum saepe voluptatibus voluptatum!
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 mt-5">
+                        <img src="images/mission.png" alt="" class="transition">
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <div class="bordure-section2">
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12  valeurs">
+                <h1 class="title-valeurs valeurs">nos valeurs</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="d-flex flex-wrap justify-content-around container ">
+          <div class="">
+            <div class="icons_font">
+              <i class='fas fa-hand-holding-heart confiance'></i>
+            </div>
+            <div  class="text-center freek">
+              la Confiance
+             
+            </div>
+            
+          </div>
+          <div class="">
+            <div class="icons_font">
+              <i class='fa fa-hourglass-half partage'></i>
+            </div>
+            <div class="text-center freek">
+              Le partage
+            </div>
+
+          </div>
+          <div class="">
+            <div class="icons_font">
+              <i class='fa fa-anchor respect'></i>
+            </div>
+            <div class="text-center freek">
+              Le respect
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pl-0 pr-0">
+        <section class="section-two mt-5 pb-5" style="background: #E4FEFE;">
+            <div class="bordure-section">
+
+            </div>
+            <div class="container section-two-one">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 ">
+                        <h1 class="title-tree chiffres">nos chiffres clefs</h1>
+                    </div>
+                </div>
+                <div class="row ordre text-center">
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <img src="images/icone1.png" alt="" class="icons_chiffres">
+                      <span style="position: relative; top: -13px;">
+                          <span class="post-chiffres">
+                              +150
+                          </span>
+                        <span class="redige">
+                             redigés <br>
+                        </span>
+                        <span style="margin-left: 90px; position: relative; top: -30px; font-family:Montserrat; font-size: 20px;  color: #373535; text-transform: uppercase;">
+                            et optimisés
+                        </span>
+                      </span>
+
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <img src="images/icone1.png" alt="" class="icons_chiffres">
+                      <span style="position: relative; top: -13px;">
+                          <span class="post-chiffres">
+                              +150
+                          </span>
+                        <span class="redige">
+                             redigés <br>
+                        </span>
+                        <span style="margin-left: 90px; position: relative; top: -30px; font-family:Montserrat; font-size: 20px;  color: #373535; text-transform: uppercase;">
+                            et optimisés
+                        </span>
+                      </span>
+
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <img src="images/icone1.png" alt="" class="icons_chiffres">
+                      <span style="position: relative; top: -13px;">
+                          <span class="post-chiffres">
+                              +150
+                          </span>
+                        <span class="redige">
+                             redigés <br>
+                        </span>
+                        <span style="margin-left: 90px; position: relative; top: -30px; font-family:Montserrat; font-size: 20px;  color: #373535; text-transform: uppercase;">
+                            et optimisés
+                        </span>
+                      </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <h1 class="title-temoignage">témoignages</h1>
+                    </div>
+                </div>
+                <div class="row">
+                   <div class="col-lg-12 col-md-12 col-sm-12 temoignage-haut">
+                       
+                        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"  uk-slider="autoplay: true">
+
+                            <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-2@m uk-grid">
+                                <li>
+                                    <div class="uk-panel ">
+                                        <img src="images/Angela-procare.png" alt="" class="image-angela transition">
+                                        <div class="card  ">
+                                            <div class="card-body">
+                                              <i class="fa fa-quote-right icon-font "></i>
+                                              <p class="text-dark paragraphe">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum voluptatum deserunt neque nisi suscipit cum, vitae error fuga temporibus reiciendis quibusdam</p>
+                                              <h5 class="card-title ">Angela merkel</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="uk-panel ">
+                                        <img src="images/james-procare.png" alt="" class="image-angela transition">
+                                        <div class="card  ">
+                                            <div class="card-body">
+                                              <i class="fa fa-quote-right icon-font "></i>
+                                              <p class="text-dark paragraphe">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum voluptatum deserunt neque nisi suscipit cum, vitae error fuga temporibus reiciendis quibusdam</p>
+                                              <h5 class="card-title ">James Cameron</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="uk-panel ">
+                                        <img src="images/Angela-procare.png" alt="" class="image-angela transition">
+                                        <div class="card  ">
+                                            <div class="card-body">
+                                              <i class="fa fa-quote-right icon-font "></i>
+                                              <p class="text-dark paragraphe">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum voluptatum deserunt neque nisi suscipit cum, vitae error fuga temporibus reiciendis quibusdam</p>
+                                              <h5 class="card-title ">Angela merkel</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="uk-panel ">
+                                        <img src="images/james-procare.png" alt="" class="image-angela transition">
+                                        <div class="card  ">
+                                            <div class="card-body">
+                                              <i class="fa fa-quote-right icon-font "></i>
+                                              <p class="text-dark paragraphe">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum voluptatum deserunt neque nisi suscipit cum, vitae error fuga temporibus reiciendis quibusdam</p>
+                                              <h5 class="card-title ">James Cameron</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                             
+                              
+                            </ul>
+                        
+                            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                        
+                        </div>
+                        
+                   </div>
+                   
+                </div>
+            </div>
+            </section>
+            <div class="bordure-temoignage">
+
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container-fluid pl-0 pr-0">
+                <div class="container">
+                        <a href="">
+                      <img src="images/logo_procare1.png" alt="" class="image-footer" title="PROCARE">
+
+                        </a>
+                      <div class="row text-center mt-5  popo">
+                          <div class="col-lg-4 col-md-4 text-center pl-5 bas-footer">
+                           <p class="text-justify ">
+                                <i class="fas fa-map-marker-alt" style="color: white;"></i>
+                                <span style="color: #FCF5F5;">
+                                    Saint-Paul Montréal
+                                </span><br><br>
+                                <span class="iconify phone3" data-icon="clarity:phone-handset-solid" data-inline="false"></span>
+
+                                <span style="color: white;"> 
+                                    +1 (514) 262-9508</span>
+                                <br><br>
+                                <span class="iconify mail-footer" data-icon="heroicons-solid:mail" data-inline="false"></span>
+
+                                <span style="color: white;">
+                                    procare@contact.com
+                                </span>
+                           </p>
+                          </div>
+                          <div class="col-lg-4 col-md-4">
+                              <p class="text-justify pl-5">
+                                  <a href="" style="color: white; text-decoration: none; font-weight: bold;">
+                                      <span>Suivez-nous</span>
+                                  </a>
+                                  <br><br>
+                                  <span >
+                                    <a href="" >
+                                        <span class="iconify text-white" data-icon="ant-design:facebook-filled" data-inline="false"></span>
+                                    </a>
+                                    <a href="">
+                                        <span class="iconify text-white" data-icon="ant-design:twitter-square-filled" data-inline="false"></span>
+                                    </a>
+                                    <a href="">
+                                        <span class="iconify text-white" data-icon="ant-design:linkedin-filled" data-inline="false"></span>
+                                    </a>
+                                    <a href="">
+                                        <span class="iconify text-white" data-icon="ant-design:google-plus-square-filled" data-inline="false"></span>
+                                    </a>
+                                </span>
+                                  <br> <br>
+                              </p>
+                                 <h4>Abonnez-vous à notre newsletter</h4>
+                                 <form action="" method="">
+                                    <div class="input-group mb-3">
+                                        <input type="email" name="email" class="form-control procare-mail" data-msg="Entrez une adresse Email valide" placeholder="procare@gmail.com" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                          <button type="submit" name="submit" class="input-group-text recherche-mail" id="basic-addon2"><i class="fas fa-paper-plane" style="font: size 24px; color:white ;"></i></button>
+                                        </div>
+                                    </div>
+                                 </form>
+                                
+                                   
+                                
+                          </div>
+                          <div class="col-lg-2 col-md-2">
+                             <p class="text-justify pl-5">
+                              <a href="" style="color: white; text-decoration: none; font-weight: bold;">
+                                  <span>Accueil</span>
+                              </a>
+                              <br><br>
+                              <a href="" style="color: white; text-decoration: none;">
+                                  <span>L'équipe</span>
+                              </a>
+                              <br><br>
+                              <a href="" style="color: white; text-decoration: none;">
+                                  <span>Actualité</span>
+                              </a>
+                              <br>
+                             
+                             </p>
+                          </div>
+
+                          <div class="col-lg-2 col-md-2">
+                            <p class="text-justify pl-5">
+                             <a href="" style="color: white; text-decoration: none; font-weight: bold;">
+                                 <span>Accompagnement</span>
+                             </a>
+                             <br><br>
+                             <a href="" style="color: white; text-decoration: none;">
+                                 <span>Carrière</span>
+                             </a>
+                             <br><br>
+                             <a href="" style="color: white; text-decoration: none;">
+                                 <span>Contact</span>
+                             </a>
+                             <br>
+                            
+                            </p>
+                         </div>
+                      </div>
+                </div>  -->
+                <!-- <div class="row">
+                    <div class="col-md-12 fixed-bottom">
+                        <span class="float-right ">
+                            <a href="#topbar" uk-scroll>
+                                <i class="icofont-block-up breek-footer "></i>
+                            </a>
+                        </span>
+                    </div>
+                </div> -->
+            <!-- </div> -->
+            <!-- <a id="back2Top" title="Back to top" href="#">&#10148;</a>
+            <div class="container-fluid ">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 pt-3 pb-3 text-center  coco">
+                        <span class="text-copyright ">
+                            Copyright &copy; PROCARE. All Rights Reserved Développé par
+                        </span>
+                        <a href="" class="copy">
+                            <span>
+                                B.L Technology.
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+         
+        </footer> -->
+
+    <script src="bootstrap/js/jquery-3.5.1.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/style.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src = "https://code.iconify.design/1/1.0.7/iconify.min.js"> </script>
+    <script src="uikit-3.5.4/js/uikit.min.js"></script>
+    <script src="uikit-3.5.4/js/uikit-icons.min.js"></script>
+</body>
+</html>
